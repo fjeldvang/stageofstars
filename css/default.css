@@ -7865,17 +7865,14 @@ footer h5 {
 
 @media screen and (max-width: 768px) {
 
-    #slide > div{
-      background-size: 768px 100%;
+    /*#slide > div{
+      background-size: 768px auto;
       background-repeat:no-repeat;
     }
     #home{
       padding-bottom:100% !important;
-    }
+    }*/
     #slideHero > img{
       transform: translate(-50%, 0);
-    }
-    .card{
-      padding-bottom:10px;
     }
   }
