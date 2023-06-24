@@ -3284,6 +3284,7 @@ input[type="button"].btn-block {
       color: #ffffff; }
 
 .card {
+  min-height:100% !important;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -3306,6 +3307,7 @@ input[type="button"].btn-block {
     border-bottom-left-radius: 0.3rem; }
 
 .card-body {
+  margin-bottom:1%;
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
   padding: 1.25rem; }
@@ -7829,6 +7831,7 @@ footer h5 {
     100% { opacity: 0; }
     }
 }
+
 /*all themes colors*/
 .bg-black {
   background-color: #000000; }
