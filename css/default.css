@@ -7814,6 +7814,21 @@ footer h5 {
       }
     }
 
+#slideHero{
+  position: relative;
+  animation: fade-out 7s forwards;
+}
+#slideHero > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  @keyframes fade-out {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+    }
+}
 /*all themes colors*/
 .bg-black {
   background-color: #000000; }
@@ -7848,60 +7863,19 @@ footer h5 {
 .bg-cyan {
   background-color: #00e5ff; }
 
-/*theme switcher*/
-.switcher-wrap {
-  position: fixed;
-  top: 250px;
-  width: 250px;
-  background: #263238;
-  color: #CFD8DC;
-  z-index: 100;
-  padding: 20px;
-  left: -250px;
-  transition: .3s; }
-  .switcher-wrap.active {
-    left: 0; }
-  .switcher-wrap ul {
-    margin: 0;
-    padding: 0;
-    list-style: none; }
-    .switcher-wrap ul li {
-      margin-bottom: .5rem; }
-      .switcher-wrap ul li a {
-        color: #CFD8DC; }
-        .switcher-wrap ul li a:hover {
-          color: #FF64CC; }
-  .switcher-wrap .color-switcher ul li {
-    width: 28px;
-    height: 28px;
-    float: left;
-    margin: 3px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: .3s; }
-    .switcher-wrap .color-switcher ul li.active {
-      border: 3px solid #455A64; }
-  .switcher-wrap .switcher-trigger {
-    position: absolute;
-    left: 100%;
-    width: 40px;
-    height: 40px;
-    background: #263238;
-    top: 0;
-    font-size: 20px;
-    text-align: center;
-    color: rgba(213, 0, 249, 0.5);
-    cursor: pointer;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
-    border-radius: 0 2px 2px 0; }
-    .switcher-wrap .switcher-trigger:hover {
-      color: #FF64CC; }
-
 @media screen and (max-width: 768px) {
-  .switcher-wrap {
-    display: none; } }
+
+    #slide > div{
+      background-size: 768px 100%;
+      background-repeat:no-repeat;
+    }
+    #home{
+      padding-bottom:100% !important;
+    }
+    #slideHero > img{
+      transform: translate(-50%, 0);
+    }
+    .card{
+      padding-bottom:10px;
+    }
+  }
