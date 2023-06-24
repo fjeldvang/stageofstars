@@ -7864,15 +7864,18 @@ footer h5 {
   background-color: #00e5ff; }
 
 @media screen and (max-width: 768px) {
-
+/*
     #slide > div{
-      background-size: 768px auto;
+      background-size: 768px 514.56px;
       background-repeat:no-repeat;
-    }
+    }/*
     #home{
-      padding-bottom:100% !important;
-    }
+      padding-bottom:70% !important;
+    }*/
     #slideHero > img{
-      transform: translate(-50%, 0);
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
     }
   }
