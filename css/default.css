@@ -7864,9 +7864,9 @@ footer h5 {
   background-color: #00e5ff; }
 
 @media screen and (max-width: 768px) {
-/*
+
     #slide > div{
-      background-size: 768px 514.56px;
+      background-size: 768px 100%;
       background-repeat:no-repeat;
     }/*
     #home{
